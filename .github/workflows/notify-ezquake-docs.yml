@@ -15,4 +15,3 @@ jobs:
           token: ${{ secrets.EZQUAKE_DOCS_REPO_ACCESS_TOKEN }}
           repository: vikpe/ezquake.github.io
           event-type: ezquake-updated
-#          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
