@@ -1,14 +1,15 @@
-name: Ping docs
+name: Notify ezQuake docs
 
 on:
   push:
     branches: [ master ]
 
 jobs:
-  ping-docs:
+  notify-ezquake-docs:
+    name: Notify ezQuake docs
     runs-on: ubuntu-latest
     steps:
-      - name: Ping docs
+      - name: Dispatch updated event
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.EZQUAKE_DOCS_REPO_ACCESS_TOKEN }}
